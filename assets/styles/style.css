@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "latoBold";
+    src: url("../fontes/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: "latoRegular";
+    src: url("../fontes/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "MerriweatherRegular";
+    src: url("../fontes/Merriweather-Regular.ttf");
+}
+
 input[type="checkbox"]{
     width: 1.3em;
     height: 1.3em;
@@ -12,13 +25,50 @@ input[type="checkbox"]{
     margin-right: 11px;
 }
 
+body{
+    background-color:black;
+}
+
+.container-geral{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.container-login{
+    margin-bottom: 150px;
+}
+
+.container-title h3 {
+    font-family: "MerriweatherRegular";
+    font-size: 13px;
+}
+
+.container-title h1 {
+    font-family: "latoBold";
+    font-size: 26px;
+}
+
+.container-input label {
+    font-family: "latoRegular"!important; 
+    font-size: 12px !important;
+}
+
+.container-checkbox span{
+    color: var(--blue);
+}
+.container-checkbox span:hover{
+    cursor: pointer;
+}
+
 .checkbox-round:checked {
     background-color: rgb(19, 3, 3);
 }
 
 .container-figure{
-    width: 65vw;
-    height: 100vh;
+    width: 55%;
+    height: 100%;
     background-color: var(--white300);
 }
 
@@ -27,60 +77,102 @@ figure{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 49vw;
+    width: 100%;
 }
 
 figure img{
-    display: flex;
-    width: 70%;
-    width: 364px;
+    width: 100%;
+    width: 400px;
 }
 
-.container{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-}
 .container-form{
-    height: 100vh;
-}
-
-.container-login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 45%;
+    display: flex; 
+    justify-content: flex-end;
     align-items: center;
-    height: 100vh;
-    width: 51vw;
+    flex-direction: column;
     background-color: var(--white);
 }
 
+.container-title{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
-.container-input{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width: 17vw;
+.container-input label{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: "latoRegular";
 }
 
 .input{
+   padding: 10px;
+   width: 300px;
+}
+
+.container-checkbox{
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 310px;
+    font-size: 12px;
+    font-family: latoRegular;
+    margin-bottom: 26px;
+    margin-top: 15px;
+}
+
+a {
+    color: var(--blue) !important;
+}
+
+a:hover{
+    cursor: pointer;
 }
 
 .container-radio{
     display: flex;
-    width: 38%;
-    margin-top: 14px;
-    margin-left: 30px;
+    justify-content: flex-start;
 }
 
-.container-radio span{
-    margin-left: 100px;
+.container-esqueceu-senha{
+    display: flex;
+    justify-content: flex-end;
 }
 
-.container-options{
-
+.container-button{
+    display: flex;
+    flex-direction:column;
 }
+
+.btn{
+    margin-bottom: 10px;
+    border: none;
+    font-family: "latoBold";
+    font-size: 12px;
+    padding: 10px;
+}
+
+.btn-success{
+    background-color: var(--green);
+}
+
+.btn-dark{
+    letter-spacing: 1px;
+    display: flex !important;
+    justify-content: center;
+}
+
+.btn-dark img{
+    margin-right: 10px;
+}
+
+.container-footer{
+    margin-bottom: 60px;
+}
+
+.container-footer label{
+    font-family: "latoRegular";
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+

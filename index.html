@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./assets/bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/styles/variaveis.css">
+    <link rel="stylesheet" href="./assets/bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-geral">
 
         <div class="container-figure">
 
@@ -46,26 +47,40 @@
                         
                     </div>
                     
-                    <div class="container-radio">
+                    <div class="container-checkbox">
                         
-                        <input type="checkbox" class="checkbox-round">
-                        <label for="">Lembre de mim</label>
+                        <div class="container-radio">
+
+                            <input type="checkbox" class="checkbox-round">
+                            <label>Lembre de mim</label>
+
+                        </div>
+
+                        <div class="container-esqueceu-senha">
+
+                            <a> Esqueceu sua senha?</a>
+
+                        </div>
+
                         
                     </div>
                     
-                    <div class="container-span">
-                        
-                        <span>Esqueceu sua senha?</span>
-                        
-                    </div>
                     
                 </div>
 
 
+                <div class="container-button">
 
-                <button class="btn btn-success">Entrar</button>
-                <button class="btn btn-dark">Ou faça login com o Google</button>
+                    <button class="btn btn-success">Entrar</button>
+                    <button class="btn btn-dark"> <img src="./assets/images/google.svg" alt=""> Ou faça login com o Google</button>
 
+                </div>
+
+            </div>
+
+            <div class="container-footer">
+
+                <label for="">Não tem uma conta? <a>Cadastre-se</a></label>
             </div>
 
         </form>
